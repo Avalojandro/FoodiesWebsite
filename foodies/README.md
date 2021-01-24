@@ -17,5 +17,7 @@ The website was deployed with Google Firebase, so the first time that you open t
 <br>
 +The API url from `https://api.elaniin.dev/api/locations` and `https://api.elaniin.dev/api/contact` redirects to `https://api.elaniin.dev` and don't show a JSON.
 
-## Thanks
+## Thanks 😀
 This has been one of the most productive and enriching experiences of my entire life and a huge learning process that I will never forget, thanks
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
