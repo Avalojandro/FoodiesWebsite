@@ -1,0 +1,217 @@
+<div class="stain">
+    <!-- Adding navbar component -->
+    <app-navbar></app-navbar>
+
+<!-- SECTION 1 -->
+    <div class="section1">
+        <div class="grid items-center grid-cols-2 section1">
+        <div data-aos="fade-up" class="headline taste">
+            <span class="focusText">
+                Un nuevo <br>sabor esta en <br><span class="marker">la ciudad</span> 
+            </span> 
+                <br><br>
+                
+            <span class="subText">
+                Estamos a punto de descubrir un mundo lleno de sabores<br class="invisible"> y de emociones inigualables.
+            </span> <br><br><br>
+
+            <span class="encuentranos">Encuentranos <img class="arrow" src="../../../assets/Home/arrow.svg"></span>
+        </div>
+            <div 
+               data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500" 
+                align="center">
+                <img class="hamburguer" src="../../../assets/Home/hamburguer.png" alt="">
+            </div>
+        </div>    
+    </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<div id="about" class="section2 grid items-center grid-cols-2">
+    <div data-aos="fade-up-right" class="section2img">
+        <div class="foodart">
+            <span class="white">LA COMIDA ES</span><br> <span class="yellow">NUESTRO ARTE</span>
+        </div>
+    </div>
+
+    <div data-aos="fade-down-left" class="section2r">
+        <span class="whois">¿Quien es foodies?</span>  <br><br>
+        <span class="lorem">Lorem, ipsum dolor sit amet Dolor, recusandae! Numquam consectetur adipisicing elit. Dolor, recusandae! Numquam aliquam iusto consectetur earum, necessitatibus nisi eaque voluptate, similique  Dolor, recusandae! Numquam dolore saepe in facere harum quos illo eos repellendus minima?</span> 
+    </div>
+</div>
+
+<!-- MAP SECTION -->
+<div id="map" class="section3 grid items-center grid-cols-2">
+    <div  data-aos="zoom-in" class="center">
+        <span class="hereAre">Estamos para ti</span><br>
+        <div class="grid grid-cols-2 sec3padd">
+            <div class="wear border">
+                <img src="../../../assets/Home/food.svg" class="inline" alt=""><span class="wearText">Para llevar</span> 
+            </div>
+            <div class="delivery border">
+                <img src="../../../assets/Home/truck.svg" class="inline" alt=""><span class="wearText">Domicilio</span>
+            </div>
+        </div>
+        <div class="border">
+            <img src="../../../assets/Menu/lupa.svg" class="inline" alt=""><input type="text" placeholder="Busca un nombre o direccion" class="textBox">
+        </div>
+        
+        <div *ngFor="let i of [1,1,1]"  class="border result">
+            <span class="place">Sucursal San Benito</span><br>
+            <span class="">Abierto de 12:00 m.d. - 9:00 p.m.</span><br>
+            <span>Calle la Reforma #543, Colonia San Benito</span>
+        </div>
+    </div>
+
+    <div data-aos="zoom-in-left" class="mappa">
+        <agm-map class="map" [zoom]="18" [latitude]="latitude" [longitude]="longitude" ></agm-map>
+    </div>
+</div>
+
+
+    <br><br><br>
+
+<!-- SLIDER SECTION -->
+<div class="ketchup">
+<div class="section4 s-wrap"><div class="s-move">
+    <div class="slide">
+        <span class="bestPlace">"El mejor lugar para degustar <br> en familia y amigos"</span><br><br>
+        <span class="sentence">Es el mejor lugar al que he venido con mi familia, la comida es<br> rica, sirven rápido y te atienden de la mejor manera.</span>
+    </div>
+    <div class="slide">
+        <span class="bestPlace">"Las mejores promociones que <br> se pueden encontrar"</span><br><br>
+        <span class="sentence">Es el mejor lugar al que he venido con mi familia, la comida es<br> rica, sirven rápido y te atienden de la mejor manera.</span>
+    </div>
+    <div class="slide">
+        <span class="bestPlace">"Una gran variedad de opciones <br> para escoger"</span><br><br>
+        <span class="sentence">Es el mejor lugar al que he venido con mi familia, la comida es<br> rica, sirven rápido y te atienden de la mejor manera.</span>
+    </div>
+    <div class="slide">
+        <span class="bestPlace">"El mejor lugar para degustar <br> en familia y amigos"</span><br><br>
+        <span class="sentence">Es el mejor lugar al que he venido con mi familia, la comida es<br> rica, sirven rápido y te atienden de la mejor manera.</span>
+    </div>
+    <div class="slide">
+        <span class="bestPlace">"Un ambiente muy agradable para <br> matar el hambre"</span><br><br>
+        <span class="sentence">Es el mejor lugar al que he venido con mi familia, la comida es<br> rica, sirven rápido y te atienden de la mejor manera.</span>
+    </div>
+  </div>
+    </div>
+</div>
+
+
+<!-- FORM SECTION -->
+<div id="form" class="black" align="center">
+   <div *ngIf="this.param2" >
+    <span data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" class="experience">Cuentanos tu experiencia</span><br>
+    <span data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" 
+            class="dontMiss">No se pierda nuestras excelentes ofertas y promociones<br> recibidas por correo electrónico.</span><br><br>
+
+    <form data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        class="fadeform" action="submit">
+        <div class="formAlign grid grid-cols-2">
+            <div class="block">
+                <small>Nombre y apellido</small><br>
+                <input class="form1" id="name" type="text" name="name">
+                    <br><br>
+                <small>Correo electronico</small><br>
+                <input class="form1" id="mail" type="email" name="" id="">
+            </div>
+                
+            <div class="block">
+                <small>Mensaje</small> <br>
+                <!-- <input class="form2" type="text" placeholder="El dia de hoy mi experiencia fue" name="" id=""> -->
+                <textarea class="form2" name="" id="" cols="30" rows="10" placeholder="El dia de hoy mi experiencia fue..."></textarea>
+            </div>
+        </div>
+        <div class="sendDiv">
+            <a type="submit" class="send" (click)="enviar()">Enviar comentario</a>
+        </div>
+    </form>
+</div>
+
+    <div *ngIf="this.param1" data-aos="zoom-in">
+        <img src="../../../assets/Home/mail.svg" alt=""><br>
+        <span class="thanks">Gracias por tus comentarios</span><br>
+        <span>Te invitamos a seguir explorando nuestro sitio web</span><br><br>
+        <a class="send" routerLink="menu">Conoce nuestro menu</a>
+    </div>
+
+</div>        
+
+
+<!-- APP SECTION -->
+<div class="section6 grid grid-cols-2">
+    <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="phoneDiv" align="center">
+        <img class="phone" src="../../../assets/Home/phone2.png" width="650px" alt="">
+    </div>
+    
+    <div align="center" class="moving">
+        <span class="benefits">Obten mas beneficios,</span><br>
+        <span class="benefits marker">Descarga nuestra App</span>
+        <br><br>
+
+        <div class="grid grid-cols-2 benefits12">
+            <!-- Benefit 1 -->
+            <div data-aos="flip-down" class="topadd" animateOnScroll animationName="flip">
+                <img src="../../../assets/Home/yellow1.png" alt=""><br>
+                <span class="benefititle">Solicita rapido</span><br><br>
+                <span>Accede a nuestra aplicacion de forma<br> rapida sin tener que salir de tu casa</span>
+            </div>
+
+            <!-- Benefit2 -->
+            <div data-aos="flip-down" class="topadd" animateOnScroll animationName="flip">
+                <img src="../../../assets/Home/yellow2.png" alt=""><br>
+                <span class="benefititle">Facil de usar</span><br><br>
+                <span>Con un entorno amigable y sencillo<br> no tendras problemas al hacer tu pedido</span>
+            </div>
+        </div>
+            <br>
+        <!-- Benefit3 -->
+        <div data-aos="flip-down" class="topadd" animateOnScroll animationName="flip">
+            <img src="../../../assets/Home/yellow3.png" alt=""><br>
+            <span class="benefititle">Promociones especiales</span><br><br>
+            <span>Tenemos ofertas y cupones todos los<br> dias, recibe notificaciones desde tu telefono!</span>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="grid grid-cols-2 footer items-center">
+    <div>
+        <span class="titleFooter">Foodies</span>
+    </div>
+
+    <div class="appsalign">
+        <img src="../../../assets/Home/appstore.png" class="apps" alt="">
+        <img src="../../../assets/Home/googleplay.png" class="apps" alt="">
+    </div>
+</div><br>
+        
+<div style="padding-left:40px; padding-right:40px">
+        <hr class="hr">
+</div><br>
+
+<div class="lista">
+    <ul class="ul">
+        <li class="ul">Conoce nuestras sucursales</li>
+        <li class="ul">Acerca de</li>
+        <li class="ul">Que hablan de nosotros?</li>
+        <li class="ul">Contactanos</li>
+    </ul>
+</div>
+
+<br><br>

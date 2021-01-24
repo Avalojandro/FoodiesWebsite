@@ -1,0 +1,84 @@
+<div class="stain">
+    <!-- Adding navbar component -->
+    <app-navbar-white></app-navbar-white>
+
+<!-- section 1 -->
+    <div data-aos="zoom-in" animateOnScroll animationName="fade" class="section1">
+        <div class="grid items-center grid-cols-2 section1">
+        <div class="paddtop">
+            <span class="focusText">
+                Cada sabor <br>es una nueva <br><span class="marker">experiencia</span> 
+            </span><br><br>
+    
+        </div>
+            <div align="center">
+                <img class="hamburguer" src="../../../assets/Menu/hamburger.png" alt="">
+            </div>
+        </div>    
+    </div><br>
+</div>
+
+    <br><br>
+<!-- Searchbar and filter -->
+<div data-aos="zoom-out" class="searchBar">
+    <img class="lupa" src="../../../assets/Menu/lupa.svg" alt="">
+    <input (click)="todas()" class="search" type="text" 
+            placeholder="&nbsp;&nbsp;&nbsp; Busca tu platillo favorito">
+
+    <ul class="list">
+        <li class="ul" (click)="todas()">Todas</li>
+        <li class="ul" (click)="tradicionales()">Las tradicionales</li>
+        <li class="ul" (click)="recomendaciones()">Recomendaciones</li>
+        <li class="ul" (click)="compartir()">Para compartir</li>
+    </ul>
+</div><br><br><br>
+
+<!-- Displaying the menu using an ngFor  -->
+ <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 menuCards">
+     <div data-aos="flip-right" *ngFor="let platos of menu"  class="menuCard">
+         <div class="imgcard">
+             <img class="imageBurguer" [src]="platos.image" alt="">
+         </div>     
+         <div class="nameBurguer">
+            <span>{{platos.name}}</span>
+         </div>
+         <div class="description">
+            <span>
+                {{platos.description}}
+            </span>
+         </div>    
+         <div class="typeNDprice">
+             <span>
+                 {{platos.category}}
+            </span>
+         </div>      
+    </div>
+</div><br><br><br><br>
+
+<!-- Footer -->
+<div class="grid grid-cols-2 footer items-center">
+    <div>
+        <span class="titleFooter">Foodies</span>
+    </div>
+
+    <div class="appsalign">
+        <img src="../../../assets/Home/appstore.png" class="apps" alt="">
+        <img src="../../../assets/Home/googleplay.png" class="apps" alt="">
+    </div>
+</div><br>
+        
+<div style="padding-left:40px; padding-right:40px">
+        <hr class="hr">
+</div>
+
+    <br>
+<div class="lista">
+    <ul class="uls">
+        <li class="uls">Conoce nuestras sucursales</li>
+        <li class="uls">Acerca de</li>
+        <li class="uls">Que hablan de nosotros?</li>
+        <li class="uls">Contactanos</li>
+    </ul>
+</div>
+
+        <br><br>

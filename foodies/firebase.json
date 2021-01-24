@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/foodies",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

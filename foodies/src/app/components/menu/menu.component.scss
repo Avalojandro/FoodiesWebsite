@@ -1,0 +1,171 @@
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+    .stain{
+    background-color: black;
+    color: white;
+    background-image: url("../../../assets/Menu/Subtract.png");
+    background-repeat: no-repeat;
+    background-position: right 0%;
+  }
+  .section1{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 15px;
+  }
+
+  .focusText{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 60px;
+  }
+  .marker{
+      background-color: #FFD600;
+      color: #000000;
+  }
+
+  .searchBar{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .search{
+    background: #F8F8F8;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 467px;
+    height: 50px;
+  }
+  .list{cursor: pointer;}
+  .lupa{
+    display: inline;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    padding-left: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-right:0px ;
+    margin-bottom: 3px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .list{display: inline;}
+
+  .ul{
+    display: inline-block;
+    padding-left: 20px;
+    font-weight: bolder;
+  }
+    
+.titleFooter{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #00000066;
+  padding-left: 40px;
+}
+.appsalign{
+  text-align: right !important;
+}
+.apps{
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-right: 40px;
+}
+
+.hr{
+  border: solid  #FFD600 !important;
+}
+.uls{
+  display: inline;
+  padding-left: 20px;
+  color: #00000066;
+}
+
+.menuCards{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menuCard{
+  border-radius: 10px;
+  transition: .5s, color .10s;
+  width: 100% !important;
+}
+.menuCard img{
+  width: 100%;
+}
+
+.menuCard:hover{
+  box-shadow: 0 8px 16px 0 #00000096;
+  transform: translate(0px,5px);
+
+}
+.imageBurguer{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nameBurguer{
+  padding:15px;
+  font-family: Syne;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+}
+.description{
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.typeNDprice{
+  padding:15px;
+}
+.price{padding-left: 80px;}
+
+
+
+  @media(max-width:1024px){
+     .search{width: 200px;}   
+  }
+
+  @media(max-width:768px){
+    .focusText{font-size: 42px; line-height: 50px;}
+    .searchBar{text-align: center;}
+    .search{width: 400px;}
+    .list{display: block; padding-top: 18px;}
+    .apps{width: 190px; padding-right: 30px;}
+    .stain{background-size: 450px 450px;}
+
+  }
+
+  @media(max-width:640px){
+    .section1{display: flex; flex-direction: column-reverse;}
+    .focusText{font-size: 70px; line-height: 70px;}   
+    .paddtop{padding-top: 30px;}
+    .list{display: none;}
+    .footer{display: inline-block; text-align: center; padding-bottom: 30px !important;}
+    .appsalign{text-align: center !important;}
+    .footer{padding-left: 130px;padding-right: 130px;}
+    .uls{display: block !important; padding-left: 0px !important; padding-top: 15px;}
+    .lista{text-align: center; font-size: 18px;}
+    .titleFooter{padding-left: 0px !important;}
+    .apps{padding-right: 10px;}
+  }
+
+  @media(max-width: 639px){
+    .stain{background-size: 450px 400px;}
+    .focusText{font-size: 40px; line-height: 35px;}
+    .section1{padding-right: 1rem; padding-left: 1rem;}
+    .hamburguer{height: 50%px;width: 100%;}
+    .search{width: 200px !important;}
+    .appsalign{text-align: center !important;}
+    .apps{padding: 0px !important;}
+    .footer{padding-left: 90px;padding-right: 90px;}
+  }
