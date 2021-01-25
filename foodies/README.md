@@ -10,7 +10,7 @@ The project needs the node_modules, so you must run `npm-install` to download it
 Go to https://foodieswebsite-f2129.web.app/ to watch the landing page running in a server
 
 # Some details (IMPORTANT)
-The website was deployed with Google Firebase, so the first time that you open the website you will see some errors with the animations and  images, to fix them, please refresh the page a few times.
+The website was deployed with Google Firebase, so the first time that you open the website you will see some errors with the animations and  images, to fix them, please refresh the page a few times or enter to the menu page and return to the home page.
 
 ## API issues (IMPORTANT)
 +The images from the API url: `https://api.elaniin.dev/api/menu`, have an error 404, because the host of the images was expired or removed
